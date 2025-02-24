@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NameCoin | Customize</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/client.js"></script>
+</head>
+<body>
+<nav class="menu">
+    <a href="#" class="menu__item m-active">
+        <i class="ico ico-menu-wallet"></i>
+        Wallet
+    </a>
+    <a href="#" class="menu__item">
+        <i class="ico ico-menu-market"></i>
+        Market
+    </a>
+    <a href="#" class="menu__item">
+        <i class="ico ico-menu-profile"></i>
+        Profile
+    </a>
+</nav>
+<div class="page">
+    <div class="wrap">
+        <div class="box-header">
+            <div class="grid__side">
+                <a href="#">How it works<i class="ico ico-question"></i></a>
+            </div>
+            <a href="#">Name coin</a>
+        </div>
+        <section class="box">
+            <div class="box__label">Create coin</div>
+            <form action="" class="form">
+                <label class="form__item">
+                    <span class="form__label">
+                        <a class="hint" href="#">
+                            Что это?
+                            <span class="hint__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </a>
+                        Coin ID (4 letter):
+                    </span>
+                    <input name="coinID" type="text" class="form__node" placeholder="Type ID">
+                    <span class="form__message m-danger">Only 4 letter</span>
+                </label>
+                <label class="form__item">
+                    <span class="form__label">
+                        <a class="hint" href="#">
+                            Что это?
+                            <span class="hint__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </a>
+                        Name
+                    </span>
+                    <input name="coinName" type="text" class="form__node" placeholder="Type name">
+                </label>
+                <label class="form__item">
+                    <span class="form__label">
+                        Theme style
+                    </span>
+                    <span class="form__node">
+                        <span class="form__value">Emoji</span>
+                        <select name="coinStyle" id="coinStyle">
+                          <option value="coin_style_emoji">Emoji</option>
+                          <option value="coin_style_initial">Initial</option>
+                          <option value="coin_style_picture">Upload picture</option>
+                        </select>
+                    </span>
+                </label>
+                <div class="coin coin_style_3" id="stylingCoin">
+                    <div class="coin__initials" data-form-group="coin_style_initial">K</div>
+                    <div class="coin__emoji m-active" data-form-group="coin_style_emoji">&#127814;</div>
+                    <img class="coin__pic" data-form-group="coin_style_picture" src="img/empty-ava.svg" alt="">
+                </div>
+                <label class="form__item" data-form-group="coin_style_picture">
+                    <span class="form__label">
+                        Coin picture
+                    </span>
+                    <input class="form__node" type="file" name="coinPicture" id="coinPicture">
+                    <span class="form__message">Square image no more than 2MB</span>
+                </label>
+                <label class="form__item m-active" data-form-group="coin_style_initial coin_style_emoji">
+                    <span class="form__label">
+                        Style
+                    </span>
+                    <span class="form__node">
+                        <span class="form__value">default</span>
+                        <select name="coinColor" id="coinColor">
+                          <option value="">default</option>
+                          <option value="coin_color_1">Pink</option>
+                          <option value="coin_color_2">Gray</option>
+                          <option value="coin_color_3">Purple</option>
+                          <option value="coin_color_4">Yellow</option>
+                          <option value="coin_color_5">Green</option>
+                          <option value="coin_color_6">Red</option>
+                        </select>
+                    </span>
+                </label>
+                <label class="form__item m-active" data-form-group="coin_style_emoji">
+                    <span class="form__label">
+                        Coin symbol
+                    </span>
+                    <input id="special-character-input" type="text" name="coinSymbol" class="form__node" placeholder="Enter symbol" value="🍆" maxlength="2">
+                    <span class="form__message m-danger">Only emoji or special character</span>
+                </label>
+                <label class="form__item">
+                    <span class="form__label">
+                        Coin description
+                    </span>
+                    <textarea class="form__node" name="coinDesc" id="coinDesc" placeholder="Type description"></textarea>
+                </label>
+                <div class="form__button">
+                    <button class="button m-wide">Create</button>
+                </div>
+            </form>
+        </section>
+        <div class="final-button">
+            <a class="button m-inline m-outline" href="#">Close</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

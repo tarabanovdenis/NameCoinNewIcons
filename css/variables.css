@@ -1,0 +1,51 @@
+/* variables (begin) */
+:root {
+    --FontFamilyMain: "Open Sans", serif;
+    --FontSizeBase: 12px;
+    --FontSizeBig: 14px;
+    --FontSizeSmall: 10px;
+
+    --radius: 7px;
+
+    /* colors (begin) */
+    --clrBorder: #E9E9E9;
+    --clrBG: #F1F1F3;
+    --clrBGMuted : #C8C8C8;
+    --clrFill: #fff;
+    --clrTxt: #0B0B0B;
+    --clrTxtButton: var(--clrFill);
+    --clrBtn: var(--clrTxt);
+    --clrBtnMuted: var(--clrBorder);
+    --clrSpecialHighlight: #D9D3C9;
+    --clrSpecialHighlightBorder: #BFBAB1;
+
+    --clrDisabled: #8F8F8F;
+
+    --clrSuccess: #4E831B;
+    --clrDanger: #EF4831;
+    /* colors (end) */
+
+    /* coin styles (begin) */
+    --coin_color_1: #F2C3C1;
+    --coin_color_2: #A6A5A5;
+    --coin_color_3: #B48BED;
+    --coin_color_4: #F9C632;
+    --coin_color_5: #40651A;
+    --coin_color_6: #DF4457;
+    /* coin styles (end) */
+}
+
+.dark-theme {
+    --clrBorder: #8C40C6;
+    --clrBG: #0B0B0B;
+    --clrBGMuted : #181818;
+    --clrFill: var(--clrBG);
+    --clrTxt: #8C40C6;
+    --clrTxtButton: #fff;
+    --clrBtn: var(--clrTxt);
+    --clrBtnMuted: #271237;
+    --clrSpecialHighlight: #270d3c;
+    --clrSpecialHighlightBorder: #371454;
+    --clrDisabled: #604676;
+}
+/* variables (end) */
