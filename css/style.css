@@ -125,6 +125,7 @@ svg path {fill: var(--clrTxt)}
 .button.m-danger svg path,
 .txt.m-danger svg path {fill: var(--clrDanger)}
 .button.m-disabled svg path {fill: var(--clrDisabled)}
+.panel__tit .coin-logo path {fill: var(--clrFill)}
 
 .menu svg {
     display: block;
@@ -320,8 +321,6 @@ a svg,
 .ico-question {
     width: 9px;
     height: 12px;
-
-    background: url(../img/ico-question.svg) no-repeat;
 }
 
 .ico-user {
@@ -332,22 +331,16 @@ a svg,
 .ico-menu-wallet {
     width: 18px;
     height: 20px;
-
-    background: url(../img/ico-menu-wallet.svg) no-repeat;
 }
 
 .ico-menu-market {
     width: 20px;
     height: 20px;
-
-    background: url(../img/ico-menu-market.svg) no-repeat;
 }
 
 .ico-menu-profile {
     width: 18px;
     height: 20px;
-
-    background: url(../img/ico-menu-profile.svg) no-repeat;
 }
 
 .ico-top-up {
@@ -355,8 +348,6 @@ a svg,
     height: 30px;
 
     vertical-align: top;
-
-    background: url(../img/ico-top-up.svg) no-repeat;
 }
 
 .ico-top-up path {fill: var(--clrFill)}
@@ -365,15 +356,11 @@ a svg,
 .ico-plus {
     width: 12px;
     height: 12px;
-
-    background: url(../img/ico-plus.svg) no-repeat;
 }
 
 .ico-bars {
     width: 12px;
     height: 12px;
-
-    background: url(../img/ico-bars.svg) no-repeat;
 }
 /* ico (end) */
 
@@ -482,6 +469,14 @@ h3.m-no-indent {margin-bottom: 4px}
     border: 1px solid var(--clrBorder);
     border-radius: var(--radius);
     color: var(--clrTxt);
+}
+
+.button.button_special,
+.button.button_special:link,
+.button.button_special:visited,
+.button.button_special:focus
+{
+    background: var(--clrSpecialButton);
 }
 
 .button.m-wide,
@@ -926,7 +921,7 @@ h3.m-no-indent {margin-bottom: 4px}
     display: block;
     overflow: hidden;
 
-    width: 59px;
+    width: 69px;
     height: 59px;
 
     line-height: 60px;
@@ -945,8 +940,6 @@ h3.m-no-indent {margin-bottom: 4px}
 
     width: 100%;
     height: 100%;
-
-    background: url(../img/merch__mask.svg) no-repeat;
 }
 
 .merch__content {
@@ -1175,7 +1168,7 @@ textarea.form__node {
 
     line-height: 1.4;
 
-    background: var(--clrBG);
+    background: var(--clrBorder);
     border: 1px solid var(--clrBorder);
     border-radius: var(--radius);
     color: var(--clrTxt);
@@ -1293,27 +1286,11 @@ textarea.form__node {
 
 /* coin-logo (begin) */
 .coin-logo {
-    position: relative;
-
     top: 1px;
-
-    display: inline-block;
-
-    width: 11px;
-    height: 11px;
-
-    background: url(../img/coin-logo.svg) no-repeat;
 }
-
-.panel_balance .coin-logo,
-.button .coin-logo {background: url(../img/coin-logo_white.svg) no-repeat}
-.coin-logo.m-success {background: url(../img/coin-logo_success.svg) no-repeat}
-.coin-logo.m-danger {background: url(../img/coin-logo_danger.svg) no-repeat}
 
 .data-view__header .coin-logo {
     top: 0;
-
-    display: inline-block;
 
     width: 10px;
     height: 10px;
@@ -1321,7 +1298,7 @@ textarea.form__node {
 
 .panel .coin-logo,
 .button .coin-logo {
-    top: 1px;
+    top: 0;
 
     width: 11px;
     height: 11px;
@@ -1340,28 +1317,12 @@ textarea.form__node {
 
     width: 166px;
     margin: 0 10px;
-    height: 166px;
+    height: auto;
 }
 /* coin-logo (end) */
 
 
 /* star-logo (begin) */
-.star-logo {
-    position: relative;
-
-    top: 1px;
-
-    display: inline-block;
-
-    width: 12px;
-    height: 12px;
-
-    background: url(../img/star-logo.svg) no-repeat;
-}
-
-.button .star-logo {background: url(../img/star-logo_white.svg) no-repeat}
-.button.m-disabled .star-logo {background: url(../img/star-logo_disabled.svg) no-repeat}
-
 .button .star-logo{
     top: 1px;
 
